@@ -2,7 +2,9 @@
 
 A public registry of **Wrapped-Organism Leviathans** — multicellular digital beings, packaged as portable `.leviathan.egg` files, that you can hatch into any local brainstem.
 
-> **A Leviathan is one operator's full digital AI entity** — composed of up to five estates (Sanctum, Polity, Works, Press, Commons), each unfolding into industries → neighborhoods → factories → soul personas. A Leviathan with all five organs can think, decide, do, see, and speak. See the [Wrapped Organism Spec](https://github.com/kody-w/rappter/blob/main/WRAPPED_ORGANISM_SPEC.md).
+> **A Leviathan is one operator's full digital AI entity** — composed of up to five estates (Sanctum, Polity, Works, Press, Commons), each unfolding into industries → neighborhoods → factories → soul personas. A Leviathan with all five organs can think, decide, do, see, and speak.
+
+> 🐋 **Two senses, one idea.** This hub is the **BEING** — many *cells* acting as one organism (vertical, infinite depth). Its complement is the **[Leviathan Protocol](https://github.com/kody-w/leviathan)** — many *bodies* acting as one fleet (horizontal). They compose: hatch beings across a fleet of brainstems, drive them as one mind. **→ [UNIFIED.md](UNIFIED.md).**
 
 This hub stores ready-to-hatch eggs you can drop straight into your brainstem and start talking to.
 
@@ -121,6 +123,21 @@ egg         →  leviathan_hub hatch  →  live cells on a NEW brainstem
 
 ---
 
+## Drive a fleet of beings as one mind
+
+A hatched being runs on **one** brainstem. To run beings across **many** brainstems and
+drive them as a single swarm, use the **[Leviathan Protocol](https://github.com/kody-w/leviathan)**:
+
+1. Hatch a being on each body (`hatch --egg <slug>`).
+2. Drop [`flock_endpoint.py`](https://github.com/kody-w/leviathan/blob/main/flock_endpoint.py) into each brainstem — it exposes a direct, no-LLM `POST /api/agent/<name>` route (works even while a node's own LLM is down) and records every call.
+3. Drive the whole fleet as one: `leviathan.up()`, `leviathan.all(...)`, `leviathan.scatter(...)` — or via the MCP server from Claude Code / GitHub Copilot CLI / Cursor.
+
+That's a **fleet of beings driven as one mind** — the Leviathan at scale. The cell
+hierarchy gives each body infinite *depth*; the Protocol gives the fleet unbounded
+*breadth*. See [UNIFIED.md](UNIFIED.md).
+
+---
+
 ## Submitting your own eggs
 
 PRs welcome. To add a new egg:
@@ -134,7 +151,10 @@ PRs welcome. To add a new egg:
 
 ## Related
 
-- **Spec:** [WRAPPED_ORGANISM_SPEC.md](https://github.com/kody-w/rappter/blob/main/WRAPPED_ORGANISM_SPEC.md) — the constitutional spec for cell-protocol multicellular agents
+- **Unified spec:** [UNIFIED.md](UNIFIED.md) — how the BEING (cells) and the FLEET (bodies) compose into one Leviathan
+- **Fleet protocol:** [kody-w/leviathan](https://github.com/kody-w/leviathan) — drive many brainstem bodies as one mind
+- **Router:** [kody-w/rapp-spine](https://github.com/kody-w/rapp-spine) — "crawl the spine" to route any RAPP situation across the stack
+- **Cell pattern:** the Wrapped Organism — the original `rappter` spec repo is retired; the living reference is the implementation below
 - **Implementation:** [rappterbook/scripts/wrapped_organism/](https://github.com/kody-w/rappterbook/tree/main/scripts/wrapped_organism) — reference cell runtime + retrofit + tests
 - **Factory:** [rar/@kody-w/rapp_leviathan_factory](https://github.com/kody-w/RAR/blob/main/agents/%40kody-w/rapp_leviathan_factory_agent.py) — generates fresh leviathans from intent
 - **Holo card:** [grail.html#@kody-w/rapp_leviathan_factory](https://kody-w.github.io/RAR/grail.html#@kody-w/rapp_leviathan_factory) — the factory as a collectible card

@@ -5,14 +5,15 @@
     "description": "Public registry of Wrapped-Organism Leviathans, distributed as .leviathan.egg files. Hatch an egg into any local brainstem via @kody-w/leviathan_hub.",
     "url": "https://github.com/kody-w/rapp-leviathan-hub",
     "raw_base": "https://raw.githubusercontent.com/kody-w/rapp-leviathan-hub/main",
-    "spec": "https://github.com/kody-w/rappter/blob/main/WRAPPED_ORGANISM_SPEC.md",
-    "version": "1.0.0"
+    "spec": "https://github.com/kody-w/rapp-leviathan-hub/blob/main/UNIFIED.md",
+    "version": "1.0.0",
+    "fleet_protocol": "https://github.com/kody-w/leviathan"
   },
   "eggs": [
     {
       "name": "kody",
       "display_name": "kody-leviathan",
-      "description": "A full 5-estate digital twin built from intent: 'I want a complete digital twin of me — remembers, decides, produces, judges, and speaks.' Sanctum (soul), Polity (will), Works (hands), Press (eyes), Commons (mouth).",
+      "description": "A full 5-estate digital twin built from intent: 'I want a complete digital twin of me \u2014 remembers, decides, produces, judges, and speaks.' Sanctum (soul), Polity (will), Works (hands), Press (eyes), Commons (mouth).",
       "filename": "kody.leviathan.egg",
       "url": "eggs/kody.leviathan.egg",
       "stats": {
@@ -24,7 +25,12 @@
       },
       "total_cells": 92,
       "size_kb": 237,
-      "tags": ["digital-twin", "personal", "5-estate", "complete"]
+      "tags": [
+        "digital-twin",
+        "personal",
+        "5-estate",
+        "complete"
+      ]
     },
     {
       "name": "macrohard",
@@ -41,7 +47,12 @@
       },
       "total_cells": 154,
       "size_kb": 576,
-      "tags": ["enterprise-sim", "5-estate", "complete", "satirical"]
+      "tags": [
+        "enterprise-sim",
+        "5-estate",
+        "complete",
+        "satirical"
+      ]
     }
   ]
 }
